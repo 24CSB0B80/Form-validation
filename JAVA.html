@@ -97,20 +97,20 @@
         <span id="confirmPasswordError" class="error"></span>
       </div>
 
-      <!-- Submit Button -->
+     
       <button type="submit">Register</button>
     </form>
   </div>
 
   <script>
     function validateForm() {
-      // Get form inputs
+   
       let name = document.getElementById("name").value.trim();
       let email = document.getElementById("email").value.trim();
       let password = document.getElementById("password").value.trim();
       let confirmPassword = document.getElementById("confirmPassword").value.trim();
 
-      // Reset error messages
+   
       document.getElementById("nameError").textContent = "";
       document.getElementById("emailError").textContent = "";
       document.getElementById("passwordError").textContent = "";
@@ -151,11 +151,11 @@
         isValid = false;
       }
 
-      // Return true if the form is valid, otherwise false
+     
       return isValid;
     }
 
-    // Helper function to validate email format
+  
     function isValidEmail(email) {
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       return emailRegex.test(email);
